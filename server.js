@@ -28,6 +28,11 @@ app.get("/getGoogleRating", function(request, result) {
   })
 });
 
+//get constants from server
+app.get("/constants", function(request, result) {
+  constants();
+});
+
 app.get("/", function(request, result) {
   result.send("Welcome SOS HBI server")
 });
